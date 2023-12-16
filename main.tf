@@ -6,7 +6,10 @@ resource "aws_ssm_parameter" "foo" {
 }
 variable "params" {
   default = [
-    { name:"shaik", type:"String",value:"shaik@123"},
-    { name:"cutie", type:"String",value:"cutie@123"},
+    { name:"roboshop.dev.frontend.catalogue_url", type:"String",value:"http://catalogue-dev.shaik.website:8080/"},
+    { name:"roboshop.dev.frontend.user_url", type:"String",value:"http://user-dev.shaik.website:8080/"},
+    { name:"roboshop.dev.frontend.cart_url", type:"String",value:"http://cart-dev.shaik.website:8080/"},
+    { name:"roboshop.dev.frontend.shipping_url", type:"String",value:"http://shipping-dev.shaik.website:8080/"},
+    { name:"roboshop.dev.frontend.payment_url", type:"String",value:"http://payment-dev.shaik.website:8080/"},
   ]
 }
